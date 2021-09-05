@@ -11228,6 +11228,7 @@ textarea.form-control {
 }
 
 .ftco-footer {
+  margin-top: 50px;
   font-size: 16px;
   background: #000000;
   padding: 2em 0;
@@ -12053,4 +12054,26 @@ textarea.form-control {
 
 .title {
   text-align: center;
+}
+
+#idImg {
+  max-width: 100%;
+  height: auto;
+}
+
+.ftco-section .ftco-animate li {
+  margin: 10px 0;
+}
+
+.video-wrap {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-bottom: 56.25%;
+}
+
+iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
