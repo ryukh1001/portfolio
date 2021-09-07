@@ -12077,3 +12077,7 @@ iframe {
   width: 100%;
   height: 100%;
 }
+
+.col-md-4.project:hover {
+  cursor: pointer;
+}
