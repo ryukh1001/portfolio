@@ -448,6 +448,13 @@ mark, .mark {
   height: auto;
 }
 
+.img-fluid-md {
+  display: block;
+  max-width: 70%;
+  height: auto;
+  margin: 0px auto;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;

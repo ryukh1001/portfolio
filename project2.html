@@ -113,12 +113,35 @@
                 </ul>
               </li>
               <li>
+                테스트 데이터 생성
+                <ul>
+                  <li>차세대융합기술연구원 모션캡쳐 스튜디오에서 passive marker를 사용한 광학식 모션캡쳐 진행</li>
+                </ul>
+              </li>
+              <li>
+                C3D 파일로부터 frame rate 및 3D 좌표 데이터 추출
+                <ul>
+                  <li>c3d.py 라이브러리를 사용한 파일 읽기</li>
+                  <li>파일 헤더 데이터 중 frame rate 값 추출</li>
+                  <li>프레임별 마커들의 3D 좌표 데이터 추출</li>
+                </ul>
+              </li>
+              <li>
+                마커 위치를 보여주는 Scene 생성
+                <ul>
+                  <li>JavaScript를 사용하여 브라우저 크기에 맞춰 canvas 초기화</li>
+                  <li>Three.js를 사용하여 Perspective 카메라, 광원, 3차원 축, 격자 바닥 생성</li>
+                  <li>Canvas에 마커를 표시하기 위해 좌표계 변환 후 해당 좌표를 중심으로하는 작은 구 생성</li>
+                </ul>
+              </li>
+              <li>
                 애니메이션 출력
                 <ul>
-                  <li>Canvas, Three.js를 활용하여 3D 마커 출력</li>
                   <li>requestAnimationFrame을 사용하여 Scene 연속 출력</li>
                   <li>사용자 디스플레이 Frame Rate에 맞춘 애니메이션 속도 조절</li>
                   <li>마우스 컨트롤을 이용한 카메라 조작</li>
+                  <li>시작/정지/일시정지 버튼 클릭 이벤트로 애니메이션 조작</li>
+                  <img src="images/project2/mocap.png" alt="" class="img-fluid">
                 </ul>
               </li>
             </ul>
