@@ -22,6 +22,14 @@
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/icomoon.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .table th {
+      background-color: darkgrey;
+      color: black;
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -56,7 +64,7 @@
             <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
                     class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a
                   href="index.html#projects-section">Projects <i class="ion-ios-arrow-forward"></i></a></span>
-              <span>RapidNote</span>
+              <span>교육센터 운영 데이터베이스 설계/구축</span>
             </p>
           </div>
         </div>
@@ -68,11 +76,11 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 ftco-animate">
-          <h2 class="mb-3 title">RapidNote</h2>
-          <p><img src="images/project3/main.png" alt="" class="img-fluid" style="border: 1px solid;"></p>
+          <h2 class="mb-3 title">교육센터 운영 데이터베이스 설계/구축</h2>
+          <p><img src="images/project4/main.png" alt="" class="img-fluid" style="border: 1px solid;"></p>
           <p>
             <ul>
-              <li>프로젝트 기간: 2020.03.16 ~ 2020.06.19 (3개월)</li>
+              <li>프로젝트 기간: 2021.05.03 ~ 2021.05.11 (9일)</li>
               <li>개발 인원: 5명</li>
             </ul>
           </p>
@@ -80,12 +88,11 @@
           <h3 class="mb-3 mt-5">1. 주제 및 기획의도</h3>
           <p>
             <ul>
-              <li>주제: 속도지향의 문서편집 웹 애플리케이션 개발</li>
+              <li>주제: 효율적인 업무환경 개선을 위한 사내 업무관리 시스템 개발</li>
               <li>기획의도
                 <ul>
-                  <li>기록 방식 중 정해진 형태가 있는 폼 방식은 정형적인 정보를 입력할 수 있고, 기록을 읽을 때 가독성이 좋다는 장점이 있지만, 일반적인 사용자는 폼에서 필수 입력 요소가 아닐 경우 입력하는데 번거로움을 느끼며, 필수 입력 요소의 경우 목적에 부합하지 않을 경우 불편함만 유발한다는 단점이 있다.</li>
-                  <li>정해진 형태가 없는 문서 방식은 자유로이 입력할 수 있다는 큰 장점이 있지만 정형적인 형태를 띄는 정보를 입력할 때 그 정보를 입력하기 위해 폼을 직접 생성해야 하는 경우에 사용이 불편하다.</li>
-                  <li>위 두 방식의 장점만을 활용하여 문서 작성 및 편집에 용이한 애플리케이션이 필요하다.</li>
+                  <li>업무일정 관리, 인사 이동, 급여관리, 휴가관리, 근태관리, 공지사항 등 회사 운영에 필요한 업무를 통합하여 관리할 수 있다.</li>
+                  <li>부서, 직급 등 사용자 정보에 맞춰 필요한 정보만 선택 제공하여 사용자의 업무의 효율을 증진시킬 수 있다.</li>
                 </ul>
               </li>
             </ul>
@@ -94,72 +101,61 @@
           <h3 class="mb-3 mt-5">2. 개발환경</h3>
           <p>
             <ul>
-              <li>OS: Ubuntu 18.04</li>
-              <li>DB: MariaDB 10.4.8</li>
-              <li>WAS: Nginx + Uwsgi</li>
-              <li>Web Framework: Django</li>
-              <li>Tools: SublimeText3, PyCharm</li>
-              <li>사용언어: Python, HTML5, CSS3, JavaScript</li>
-              <li>사용기술: AWS, jQeury, AJAX, Drag and Drop</li>
+              <li>OS: Windows 10</li>
+              <li>Tools: Eclipse</li>
+              <li>사용언어: Java(JDK 1.8)</li>
+              <li>사용기술: Java File I/O, Java Collection, Overriding, Overloading</li>
             </ul>
           </p>
 
-          <h3 class="mb-3 mt-5">3. SWOT</h3>
-          <p><img src="images/project3/swot.png" alt="" class="img-fluid"></p>
-
+          <h3 class="mb-3 mt-5">3. 데이터 구조</h3>
+          
+          
           <h3 class="mb-3 mt-5">4. 주요기능 및 담당업무</h3>
           <p>
             <ul>
               <li>
-                태스크(디렉토리)/메모(파일) 추가, 삭제 이름 수정
+                관리자 기능
                 <ul>
-                  <li>AJAX를 사용한 태스크 및 메모 CRUD</li>
+                  <li>
+                    급여 관리
+                    <ul>
+                      <li>파일 입출력을 이용한 직급별 급여 조회 및 수정</li>
+                      <img src="images/project4/salary_mng.png" alt="" class="img-fluid">
+                    </ul>
+                  </li>
+                </ul>
+                <br>
+                <ul>
+                  <li>
+                    직원 휴가 일정표
+                    <ul>
+                      <li>현재 날짜 기준 달력 출력 및 키보드 입력을 통한 이전/다음 달 달력 출력</li>
+                      <li>파일 입출력을 통한 전직원 월별 휴가내역 조회</li>
+                      <li>익명클래스 Comparator 생성 후 compare 메소드 오버라이딩을 통한 휴가내역 날짜순 정렬</li>
+                      <img src="images/project4/vacation_view.png" alt="" class="img-fluid">
+                      <img src="images/project4/vacation_pre.png" alt="" class="img-fluid">
+                    </ul>
+                    <br>
+                  </li>
                 </ul>
               </li>
               <li>
-                텍스트 블럭 생성
+                사용자 기능
                 <ul>
-                  <li>textarea 입력 내용에 따른 블럭 생성</li>
-                  <li>단일블럭(문장) - 텍스트 입력 시 그룹블럭 내에 단일블럭 생성</li>
-                  <li>그룹블럭(문단) - 공백 입력 시 새로운 그룹블럭 생성</li>
-                  <img src="images/project3/block.png" alt="" class="img-fluid">
-                </ul>
-              </li>
-              <li>
-                Drag & Drop을 이용한 Text Styling
-                <ul>
-                  <li>HTML 태그 및 css color 속성을 이용한 문장 단위 텍스트 스타일링</li>
-                  <li>단일/그룹 블럭 드래그 시 화면 하단에 드롭 박스 생성</li>
-                  <li>드랍 박스에 드롭 시 우측 에디터 영역에 해당 스타일이 적용된 텍스트 생성</li>
-                  <img src="images/project3/dropbox.png" alt="" class="img-fluid">
-                </ul>
-              </li>
-              <li>
-                Hash Tag
-                <ul>
-                  <li>Hash Tag(#)를 이용한 문서 찾기 및 검색 링크 기능</li>
-                  <li>Hash Tag를 붙인 경우 해당 단어가 어느 문서에 존재하는지 검색 가능</li>
-                  <li>Hash Tag가 포함된 단어 클릭 시 해당 단어를 검색어로 하는 구글 검색 결과 페이지 오픈</li>
-                  <img src="images/project3/hashtag.png" alt="" class="img-fluid">
-                </ul>
-              </li>
-              <li>
-                Markdown
-                <ul>
-                  <li>영문자 + `(back quote) 조합을 통한 단어 단위 스타일링</li>
-                  <li>Red Color(R`/r`), Unerline(U`/u`), Bold(B`/b`) 사용 가능</li>
-                  <img src="images/project3/color_font.png" alt="" class="img-fluid">
+                  <li>
+                    근태 관리
+                    <ul>
+                      <li>파일 입출력을 통한 사용자 현재 근태 및 업무 상태 출력</li>
+                      <li>키보드 입력을 통한 상태 변경 처리</li>
+                      <img src="images/project4/attendance_mng.png" alt="" class="img-fluid">
+                    </ul>
+                    <br>
+                  </li>
                 </ul>
               </li>
             </ul>
           </p>
-
-          <h3 class="mb-3 mt-5">5. 소개영상</h3>
-          <div class="img-fluid">
-            <div class="video-wrap">
-              <iframe src="https://www.youtube.com/embed/jnNgTBBOqqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-          </div>
         </div> <!-- .col-md-8 -->
       </div>
     </div>
